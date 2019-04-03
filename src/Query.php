@@ -998,7 +998,8 @@ class Query
      */
     public function paginate($listRows = null, $simple = false, $config = [])
     {
-        $config   = array_merge(Config::get('paginate'), $config);
+
+        $config   = array_merge(['type'      => 'bootstrap', 'var_page'  => 'page', 'list_rows' => 15,], $config);
         $listRows = $listRows ?: $config['list_rows'];
         $class    = strpos($config['type'], '\\') ? $config['type'] : '\\think\\paginator\\driver\\' . ucwords($config['type']);
         $page     = isset($config['page']) ? (int) $config['page'] : call_user_func([
