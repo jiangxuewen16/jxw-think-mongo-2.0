@@ -22,9 +22,9 @@ use MongoDB\Driver\Query as MongoQuery;
 use MongoDB\Driver\ReadPreference;
 use MongoDB\Driver\WriteConcern;
 use think\Db;
-use think\Debug;
+use think\facade\Debug;
 use think\Exception;
-use think\Log;
+use think\facade\Log;
 
 /**
  * Mongo数据库驱动
