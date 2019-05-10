@@ -21,7 +21,7 @@ use MongoDB\Driver\Exception\RuntimeException;
 use MongoDB\Driver\Query as MongoQuery;
 use MongoDB\Driver\ReadPreference;
 use MongoDB\Driver\WriteConcern;
-use think\Cache;
+use think\facade\Cache;
 use think\Collection;
 use think\Config;
 use think\Db;
